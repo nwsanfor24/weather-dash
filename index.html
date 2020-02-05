@@ -35,34 +35,109 @@
                     <i class="fa"></i> Weather Dashboard</strong>
             </h1>
         </div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <form method="GET">
-                <fieldset>
-                    <ul>
-                        <label for="cityInput">Search for a City:</label>
-                        <input type="text" id="userInput" placeholder="Portsmouth" required>
-                    </ul>
-                </fieldset>
-        
-                <button class="btn btn-primary" type="submit">Show Me The Weather</button>
-            </form>
+        <div class="container">
+            <div class="row" style="height: 100px;">
+                <div class="col-sm-4 h-100">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Search for a City</h3>
+                            <form method="GET">
+                                <fieldset>
+                                    <p>
+                                        Input any city and get your five day forecast!
+                                    </p>
+                                    <input type="text" id="userInput" placeholder="Portsmouth" required>
+                                </fieldset>
+                                <br>
+                                <button class="btn btn-primary" type="submit">Show Me The Weather</button>
+                            </form>
+                            <br>
+                            <h5>Previous Cities show up below here</h5>
+                            <div id="cityList">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Show Data Here
+                            </h3>
+                            <p>
+                                Temperature:
+                            </p>
+                            <p>
+                                Humidity:
+                            </p>
+                            <p>
+                                Wind Speed:
+                            </p>
+                            <p>
+                                UV Index:
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-md-end">
+                        <div class="col-md-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        5-Day Forecast
+                                    </h3>
+                                    <div class="card-deck">
+                                        <div class="card">
+                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a longer card with supporting text below as
+                                                    a natural lead-in to additional content. This content is a little
+                                                    bit longer.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This card has supporting text below as a natural
+                                                    lead-in to additional content.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img class="card-img-top" src="..." alt="Card image cap">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card title</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as
+                                                    a natural lead-in to additional content. This card has even longer
+                                                    content than the first to show that equal height action.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                        ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-8">
-            <h1>
-                Show Data Here
-            </h1>
-        </div>
-    </div>
-</div>
 
 
-    
 
-    <!-- jQuery JS -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+        <!-- jQuery JS -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
