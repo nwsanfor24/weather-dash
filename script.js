@@ -1,20 +1,36 @@
-$(document).ready(function () {
-    var settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://community-open-weather-map.p.rapidapi.com/forecast?q=portsmouth%252Cus",
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "community-open-weather-map.p.rapidapi.com",
-            "x-rapidapi-key": "9041144344mshc5be50f9856aa91p157bd6jsn4c15dd589353"
-        }
-    }
-    
-    $.ajax(settings).done(function (response) {
+// $(document).ready(function () {
+
+    var apikey = "945dc5fe55069a270dcc159ead1201ef";
+    var city = "portsmouth";
+
+    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&APPID=" + apikey;
+
+    $.ajax({
+        //$.curl({
+        url: queryURL,
+        method: "GET"
+      }).done(function(response) {
+        
         console.log(response);
-    });
+        
+        
+        });
     
-    //  .on("click") function associated with the clear button
-    // $("#clear-all").on("click", clear);
-});
+    // var ourRequest = new XMLHttpRequest();
+
+    // ourRequest.open(
+    //     "GET",
+    //     "http://api.openweathermap.org/data/2.5/weather?q=" + 
+    //     city + 
+    //     "&APPID=" + apikey
+    // );
+
+    // ourRequest.onload = function() {
+        
+    //     var ourData = ourRequest.responseText;
+
+    //     console.log(ourData);
+
+    // }
+// });
 
