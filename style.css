@@ -11,6 +11,10 @@ body {
   background-position: top center;
 }
 
+.navbar.transparent.navbar-inverse .navbar-inner {
+  background: rgba(0,0,0,0.4);
+}
+
 .app-wrap {
   display: flex;
   flex-direction: column;
@@ -39,6 +43,10 @@ header input {
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header input:focus {
